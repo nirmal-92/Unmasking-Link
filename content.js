@@ -2,7 +2,7 @@ document.addEventListener("mouseover", function(event) {
   if (event.target.tagName === "A") {
     checkLinkSafety(event.target.href, function(isSafe) {
       if (isSafe) {
-        event.target.title = "This";
+        event.target.title = "This is safe link";
       } else {
         event.target.title = "This link is not safe";
       }
