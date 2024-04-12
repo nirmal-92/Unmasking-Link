@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Link Safety Checker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Box Example</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h3 id="linkStatus">Hover over a link to check safety...</h3>
-  <div class="tooltip-container">
-    <button class="tooltip tooltip-top">Top</button>
-    <button class="tooltip tooltip-bottom">Bottom</button>
-    <button class="tooltip tooltip-left">Left</button>
-    <button class="tooltip tooltip-right">Right</button>
-  </div>
-  <script src="./content.js"></script>
+    <a href="https://www.w3schools.com/dsa/index.php" class="link" target="_blank" onmouseover="changeContent(this)"></a>
+    
 </body>
+<script type="module" src="./content.js"></script>
 </html>
