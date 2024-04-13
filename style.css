@@ -35,3 +35,7 @@
   .tooltiptext{
     margin-left: 10px;
   }
+  .new{
+    align-items: center;
+    margin-top: 20px;
+  }
