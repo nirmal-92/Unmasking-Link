@@ -5,13 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Toggle Box Example</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
-<body class="new" style="text-align:center">    
-    <div class="tooltip"> <a href="https://www.linkedin.com/in/s-nirmal-738a60203/">Nirmal</a>
-        <span class="tooltiptext">This is a safe link</span>
+<body style="text-align:center">    
+    <!-- Tooltip element -->
+    <div class="tooltip" id="global-tooltip">
+        <span class="tooltiptext"></span>
     </div>
-</body>
 
-<script type="module" src="./content.js"></script>
+    <!-- Links -->
+    <a href="https://www.linkedin.com/in/s-nirmal-738a60203/" class="global-tooltip-link">Nirmal</a>
+    <a href="http://www.linkedin.com/in/s-nirmal-738a60203/" class="global-tooltip-link">Nirmal</a>
+
+    <script src="./content.js"></script>
+</body>
 </html>
