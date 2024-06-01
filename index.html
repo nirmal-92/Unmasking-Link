@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penstesting.com - Professional Pentesting Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .services, .tools, .contact {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form label {
+            margin: 0.5rem 0 0.2rem;
+        }
+        .contact form input, .contact form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact form button {
+            padding: 0.7rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+        .tool-container {
+            position: relative;
+            display: inline-block;
+        }
+        .tool-container .tooltip {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1;
+            width: 250px;
+            text-align: center;
+        }
+        .tool-container:hover .tooltip {
+            display: block;
+        }
+        .tooltip h3 {
+            margin: 0;
+            color: #9370DB;
+            font-size: 50px;
+        }
+        .tooltip ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .tooltip li {
+            margin: 10px 0;
+        }
+        .tooltip li .dangerous {
+            color: red;
+            font-weight: bold;
+        }
+        .tooltip button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px 0;
+            width: 100px;
+        }
+        .tooltip button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Penstesting.com</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="tools" class="tools">
+            <h2>Our Tools</h2>
+            <p>We offer a variety of powerful tools to aid in penetration testing:</p>
+            <ul>
+                <li>
+                    DDOS Tool - LOIC [Low Orbit Ion cannon] 
+                    <br>
+                    <div class="tool-container">
+                        <a href="https://downloads.sourceforge.net/project/loic/loic/loic-1.0.8/LOIC-1.0.8-binary.zip?ts=gAAAAABmSH_slv0h8RkitZzyxwlecIN03LOnb9LuxNrfkTHpjAQHIIqiyRcY7trXednF7ocGpbm5oWax4akQeEMDsckgM3LIgQ%3D%3D&use_mirror=excellmedia&r=http%3A%2F%2F172.17.12.97%2F"><!--here to change IP -->
+                            <button style="padding:10px;background-color:#333;color:white;">Download</button>
+                        </a>
+                        <div class="tooltip">
+                            <h3>PlaySafe</h3>
+                            <ul>
+                                <li>Suspicious Score: <span class="dangerous">93% more dangerous</span></li>
+                                <li>Shorten URL: none</li>
+                                <li>Masked URL: none</li>
+                            </ul>
+                       <!--here to change IP -->    <a href="http://172.17.12.97/?url=https://downloads.sourceforge.net/project/loic/loic/loic-1.0.8/LOIC-1.0.8-binary.zip?ts=gAAAAABmSH_slv0h8RkitZzyxwlecIN03LOnb9LuxNrfkTHpjAQHIIqiyRcY7trXednF7ocGpbm5oWax4akQeEMDsckgM3LIgQ%3D%3D&use_mirror=excellmedia&r" > <button> Open in Sandbox  </button></a>
+                            <button>No, Sandbox</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <p>At Penstesting.com, we provide a comprehensive range of pentesting services to ensure your systems are secure.</p>
+            <ul>
+                <li>Network Penetration Testing</li>
+                <li>Web Application Testing</li>
+                <li>Mobile Application Testing</li>
+                <li>Wireless Network Testing</li>
+                <li>Social Engineering Testing</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

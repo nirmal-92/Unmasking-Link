@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .tooltip {
     position: relative;
     display: inline-block;
@@ -34,4 +35,42 @@
   }
   .tooltiptext{
     margin-left: 10px;
+=======
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(24, 89, 202);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: 500px;
+    height: 500px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .btn:after{
+      content: "";
+      color: blue;
+  }
+  
+  .btn:hover::after{
+      content: "";
+      color: blue;
+  }
+  .tooltiptext{
+    margin-left: 10px;
+>>>>>>> 05ff1c0c7453d2ad3fe70de3c9b7e39ce0865d66
   }
