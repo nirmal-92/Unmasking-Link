@@ -1,18 +1,12 @@
-// Event listener for mouseover event on a specific element with ID "tooltiptext"
-document.getElementById("tooltiptext").addEventListener("mouseover", function() {
-  // Check if the event target is an anchor element
-  const anchorElement = document.querySelector("#tooltiptext a");
-  if (anchorElement) {
-    // Call checkLinkSafety function to determine if the link is safe
-    checkLinkSafety(anchorElement.href, function(isSafe) {
-      // Set the title attribute of the anchor element based on link safety
-      anchorElement.title = isSafe ? "✅ Safe Link" : "❌ Unsafe Link";
-    });
-  }
-});
+// Add event listener to all links
+const links = document.querySelectorAll('a');
+const toggleBox = document.getElementById('toggle-box');
 
-// Function to check the safety of a link
-function checkLinkSafety(url, callback) {
-  // For demonstration purposes, assume all links are safe
-  callback(true);
-}
+links.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default link behavior
+
+    // Show the toggle box
+    toggleBox.classList.toggle('show');
+  });
+});
